@@ -19,8 +19,8 @@ It contains two main scripts:
 ## Installation
 
 ```bash
-git clone <repository-url>
-cd Atomic_logP_GNN
+git clone <https://github.com/carlos-ccm/3D_atomic_logP.git>
+cd 3D_atomic_logP
 conda env create -f environment.yml
 conda activate atomic_logp_gnn
 ```
