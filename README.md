@@ -19,7 +19,7 @@ It contains two main scripts:
 ## Installation
 
 ```bash
-git clone <https://github.com/carlos-ccm/3D_atomic_logP.git>
+git clone https://github.com/carlos-ccm/3D_atomic_logP.git
 cd 3D_atomic_logP
 conda env create -f environment.yml
 conda activate atomic_logp_gnn
@@ -27,7 +27,7 @@ conda activate atomic_logp_gnn
 
 Main dependencies: Python 3.8, RDKit 2024.03.3, PyTorch 2.1.2, PyTorch Geometric 2.6.1, scikit-learn, pandas, tqdm.
 
-The scripts run on CPU or on a CUDA GPU (detected automatically). All commands must be run from the repository root.
+The scripts run on CPU or on a CUDA GPU (detected automatically).
 
 ---
 
@@ -93,8 +93,8 @@ train.py              Training script
 predict.py            Prediction script
 src/model.py          AtomicGNN architecture (default arguments = hyperparameters of the paper)
 src/training.py       Training loop and per-element normalization of the targets
-src/graph.py          Molecule → graph conversion (shared by training and prediction)
-src/descriptors.py    3D environment descriptors (Gasteiger, van der Waals)
+src/graph.py          Molecule → graph conversion
+src/descriptors.py    3D environment descriptors
 src/hydrogen_bond.py  Hydrogen-bond acceptors/donors and intramolecular H-bonds
 src/geometry.py       Geometric and aromaticity helpers
 src/logger.py         Console messages
